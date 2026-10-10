@@ -72,8 +72,8 @@ Defaults are created under [RealTimeShop] in UserData\MelonPreferences.cfg.
 RealTimeShop.cfg.example is a reference: merge that section if needed;
 do not overwrite settings for other mods. Restart after changes. A restored
 day retains its saved timing; new days use the configured timing. Valid
-ranges: DayMinutes 1-1440, PatienceSeconds 1-86400,
-ClosingGraceSeconds 0-86400. This release ships 30/120/60, not test timing.
+ranges: DayMinutes 1–1440, PatienceSeconds 1–86400,
+ClosingGraceSeconds 0–86400. This release ships 30/120/60, not test timing.
 Use the game's normal pause/menu controls; there is no custom F8 shortcut.
 
 UNINSTALL / ROLLBACK

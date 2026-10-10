@@ -8,7 +8,7 @@ internal sealed record Timing(double DaySeconds = 1800, double PatienceSeconds =
         if (!double.IsFinite(DaySeconds) || DaySeconds < 60 || DaySeconds > 86400 ||
             !double.IsFinite(PatienceSeconds) || PatienceSeconds < 1 || PatienceSeconds > 86400 ||
             !double.IsFinite(GraceSeconds) || GraceSeconds < 0 || GraceSeconds > 86400)
-            throw new ArgumentOutOfRangeException(nameof(Timing), "Day: 60-86400 seconds; patience: 1-86400; grace: 0-86400.");
+            throw new ArgumentOutOfRangeException(nameof(Timing), "Day: 60–86400 seconds; patience: 1–86400; grace: 0–86400.");
     }
 }
 
