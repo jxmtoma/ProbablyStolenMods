@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>ProbablyStolen.RealTimeShop</AssemblyName>
+    <Version>0.2.0</Version><Deterministic>true</Deterministic><ContinuousIntegrationBuild>true</ContinuousIntegrationBuild><DebugType>none</DebugType><PathMap>$(MSBuildProjectDirectory)=/src/RealTimeShop</PathMap>
+    <LoaderDir Condition="'$(LoaderDir)' == ''">$(GameDir)/MelonLoader/net6</LoaderDir>
+    <InteropDir Condition="'$(InteropDir)' == ''">$(GameDir)/MelonLoader/Il2CppAssemblies</InteropDir>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(LoaderDir)/MelonLoader.dll" Private="false" />
+    <Reference Include="$(LoaderDir)/0Harmony.dll" Private="false" />
+    <Reference Include="$(LoaderDir)/Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="$(InteropDir)/Assembly-CSharp.dll;$(InteropDir)/Assembly-CSharp-firstpass.dll;$(InteropDir)/Il2Cppmscorlib.dll;$(InteropDir)/Il2CppSystem.dll;$(InteropDir)/Il2CppSystem.Core.dll;$(InteropDir)/UnityEngine.CoreModule.dll;$(InteropDir)/UnityEngine.IMGUIModule.dll;$(InteropDir)/UnityEngine.InputLegacyModule.dll;$(InteropDir)/UnityEngine.UI.dll;$(InteropDir)/Unity.TextMeshPro.dll" Private="false" />
+  </ItemGroup>
+  <Target Name="CheckReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(LoaderDir)/MelonLoader.dll')" Text="Set GameDir to a MelonLoader 0.7.3 game installation, or set LoaderDir and InteropDir separately. See README.md." />
+    <Error Condition="!Exists('$(InteropDir)/Assembly-CSharp.dll')" Text="Game interop assemblies are missing. Launch the game with MelonLoader once on Windows, then supply its Il2CppAssemblies directory as InteropDir." />
+  </Target>
+</Project>
+

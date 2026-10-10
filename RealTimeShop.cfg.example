@@ -1,0 +1,6 @@
+[RealTimeShop]
+# Active minutes from 08:00 to 20:00. Restart to apply.
+DayMinutes = 30.0
+PatienceSeconds = 120.0
+ClosingGraceSeconds = 60.0
+

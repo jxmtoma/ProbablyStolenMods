@@ -1,0 +1,34 @@
+0.2.0 - stable release (2026-10-09)
+
+Promotes the current Windows after-hours implementation to stable 0.2.0.
+Gameplay behavior is unchanged from 0.2.0-rc.1. Assembly metadata and startup
+version text are updated. Original mod source is now MIT licensed, including
+commercial reuse. Dependency notices and applicable license texts are included.
+
+Adds an opt-in 30-active-minute shop day, safe timed closing and customer
+patience, continuing evening time, native sleep at a safe 03:00 cutoff,
+eight-hour rest and wake offsets from 08:00 to 11:00. Native outing-flag
+nights retain 08:00 wake. Native rent, security and overnight sequences remain
+in charge of their outcomes. Timer sidecars use version 2 and accept version 1.
+Read README.txt for save/economy effects, installation, conflicts and rollback.
+
+Validation: 24,916 managed assertions, 38 security assertions, 208 reachable
+interop methods, clean release/menu IL audits, and 13 fresh native scenario
+passes on the exact stable DLL. The independent public-source build produced
+identical bytes. All selected native runs exited normally with protected files,
+config bytes and registry preferences unchanged. The test harness is excluded.
+Native scenarios covered late/early sleep, midnight crossing, automatic sleep,
+pause deferral, repeated sleep requests, evening/morning saves and reloads,
+outing flag, patrol/dialogue, trade deferral, wanted arrest and unresolved rent.
+
+The outing case sets a native flag; actual outing travel and customer-penalty
+magnitude are not certified. Short Sleeper has dormant content but is absent
+from the normal 25-entry perk list in this build; its check is constant false.
+No active-perk or full-game availability claim is made. Long campaigns, every
+scripted visit, inspection, rent payment/refusal, crash during native save and
+every unsafe 03:00 interaction remain outside exhaustive coverage.
+
+Correct build identity: visible 049-Rev5-L, Steam Demo app 4349200 public
+build 25382790. Internal Unity version 0.46D identifies the same binaries,
+not an older separately tested release. No game update was installed; the
+earlier separate Steam file-verification request has no confirmed completion.

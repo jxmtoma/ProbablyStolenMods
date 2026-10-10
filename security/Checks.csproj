@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><NuGetAudit>false</NuGetAudit></PropertyGroup>
+<ItemGroup>
+<Compile Include="../src/RealTimeShop/PatrolClosingPolicy.cs" Link="PatrolClosingPolicy.cs" />
+<Compile Include="../src/RealTimeShop/ClosingSafety.cs" Link="ClosingSafety.cs" />
+<Compile Include="../src/RealTimeShop/ShopClock.cs" Link="ShopClock.cs" />
+</ItemGroup>
+</Project>
+

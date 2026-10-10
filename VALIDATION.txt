@@ -1,0 +1,38 @@
+Real-Time Shop 0.2.0 - automated release validation, 2026-10-09
+
+Stable DLL SHA256: 11974A54D0E865BAE905484FAE17E81463DB00CF03C5633B4C8BB673777F7BC7
+Two independent builds (working source and clean public-source directory)
+produced identical DLL bytes using SDK 10.0.401. Assembly 0.2.0.0; loader
+label 0.2.0. No gameplay code change from the preserved 0.2.0-rc.1 source.
+
+24,916 managed assertions and 38 security-state assertions passed.
+208 reachable native interop methods passed the no-unstripping-stub audit.
+Clean release IL and native-menu structural audits passed. Zero embedded
+resources; all runtime dependencies are separate references.
+
+13 fresh native scenario passes on the exact stable DLL:
+sleep-late; night-save; sleep-reload; sleep-morning-reload; sleep-early; sleep-midnight; sleep-auto; sleep-defer; sleep-outing; patrol; trade; wanted; rent.
+These are native gameplay runs with disposable fixtures near event times,
+not replay or full campaign runs. Every selected run exited with code 0;
+protected files, config bytes and registry preferences were unchanged.
+Steam ownership remained checked. The external private harness redirected
+saves/preferences and isolated known Steam progression writes. It is excluded
+from both distributed archives. All 633 runtime pins passed postflight.
+
+An initial harness-directory mismatch stopped before gameplay with the guards
+intact; that attempt is retained privately as BLOCKED and not counted as PASS.
+The harness then used the exact new stable-work output directory guard.
+
+Accepted coverage limits: the outing test supplies the native saved outing
+flag, not a full outing trip or customer-penalty magnitude test. Short Sleeper
+is dormant/not selectable in the verified demo and was not activated.
+Long campaigns, every scripted visitor, inspection, rent payment/refusal,
+crash during native save and every unsafe 03:00 interaction are not exhaustive.
+
+Compatibility: Windows Demo app 4349200, public build 25382790, visible
+049-Rev5-L; internal Unity Application.version 0.46D. No game update was
+installed. The earlier Steam verification request has no confirmed completion.
+Normal player installation and saves were not modified by this release work.
+Original incoming and RC artifacts remain unchanged. No game remained running
+when release validation completed. Source/build provenance and private native
+logs remain in the release workspace; no private logs are distributed.

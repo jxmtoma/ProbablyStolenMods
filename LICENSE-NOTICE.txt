@@ -1,0 +1,22 @@
+Real-Time Shop 0.2.0 is licensed under the MIT License in LICENSE.txt.
+Copyright (c) 2026 ProbablyStolenMods contributors.
+Commercial reuse, modification and redistribution are permitted under MIT.
+
+MIT applies to the original mod source, documentation and configuration.
+Third-party license texts retain their respective terms. Probably Stolen,
+Unity and their assets remain the property of their respective rights holders.
+This is an unofficial mod, not a game release or an endorsement.
+
+The mod dynamically uses MelonLoader, Harmony and Il2CppInterop.Runtime.
+Il2CppInterop and its use are covered by LGPL-3.0; the complete LGPL/GPL
+text is in licenses/Il2CppInterop-LGPL-GPL.txt. This mod imposes no restriction
+on modifying that library or reverse engineering to debug such modifications.
+Interface-compatible runtime replacements are permitted; no Il2CppInterop
+hash check is imposed. Build the supplied mod source to relink if needed.
+The exact game and MelonLoader version guards remain compatibility checks.
+
+No dependency binaries, generated game interop code, decompiled game code,
+game assets, saves, fixtures, credentials or private logs are distributed.
+The runtime reuses the player's existing native UI objects; those objects
+and game resources are not copied into this package.
+See DEPENDENCIES.txt for sources, versions and notices.

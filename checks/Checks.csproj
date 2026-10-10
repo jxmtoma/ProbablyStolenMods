@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NuGetAudit>false</NuGetAudit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../src/RealTimeShop/PatrolClosingPolicy.cs" Link="PatrolClosingPolicy.cs" />
+    <Compile Include="../src/RealTimeShop/NewGameSetupSelection.cs" Link="NewGameSetupSelection.cs" />
+    <Compile Include="../src/RealTimeShop/SaveOptIn.cs" Link="SaveOptIn.cs" />
+    <Compile Include="../src/RealTimeShop/TableOwnershipPolicy.cs" Link="TableOwnershipPolicy.cs" />
+    <Compile Include="../src/RealTimeShop/ClosingSafety.cs" Link="ClosingSafety.cs" />
+    <Compile Include="../src/RealTimeShop/NativeNoticeQueue.cs" Link="NativeNoticeQueue.cs" />
+    <Compile Include="../src/RealTimeShop/CustomerDiagnostics.cs" Link="CustomerDiagnostics.cs" />
+    <Compile Include="../src/RealTimeShop/NativePauseAccounting.cs" Link="NativePauseAccounting.cs" />
+    <Compile Include="../src/RealTimeShop/BreakTransition.cs" Link="BreakTransition.cs" />
+    <Compile Include="../src/RealTimeShop/SaveIdentity.cs" Link="SaveIdentity.cs" />
+    <Compile Include="../src/RealTimeShop/ShopClock.cs" Link="ShopClock.cs" />
+    <Compile Include="../src/RealTimeShop/SaveSidecar.cs" Link="SaveSidecar.cs" />
+  </ItemGroup>
+</Project>
+

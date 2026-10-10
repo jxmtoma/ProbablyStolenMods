@@ -1,0 +1,67 @@
+[
+  {
+    "reference": "net6/MelonLoader.dll",
+    "sha256": "BDD43DC0F3893C208C95389B863AB61C967AE14204DA0DD8051647E754C8709B",
+    "productVersion": "0.7.3+982ed9981ac5b0619648a2e79bcc02fd8861db33"
+  },
+  {
+    "reference": "net6/0Harmony.dll",
+    "sha256": "6C898933B52149E8BCF6722305C7E4D94ADD47C9E53B364096F91721624C0877",
+    "productVersion": "2.10.2"
+  },
+  {
+    "reference": "net6/Il2CppInterop.Runtime.dll",
+    "sha256": "3878CE0BA0C60385F76F2BA37E07AD0EE3649D019703AEC8695DB3402ABEEDD7",
+    "productVersion": "1.5.1-ci.845+f03c8f4ae507d47ea814f3d11d1ec6b0391c1576"
+  },
+  {
+    "reference": "Il2CppAssemblies/Assembly-CSharp.dll",
+    "sha256": "20C058D11DF430463B7AED241C7D8213BFA9898E362B01C54B430467ADD03B29",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/Assembly-CSharp-firstpass.dll",
+    "sha256": "D288A08F999E373753FCD3C426D5F4E607F8B14AC9CF64E114B8C56F4FA05C6A",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/Il2Cppmscorlib.dll",
+    "sha256": "B25C47FBE080CCF1024BFD241A2CED6EE9CCAE1B22B07ADC7C8FE0571195786B",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/Il2CppSystem.dll",
+    "sha256": "CCEC1A2DBCE84D548FD0AE7B95B7F3020F462CDC30E17D4B7B0C0E09FB5DC00B",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/Il2CppSystem.Core.dll",
+    "sha256": "17F420A168E921608D23FF87F2E809EA9D87AB1A11838C2F38D658A590F42746",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/UnityEngine.CoreModule.dll",
+    "sha256": "941267262C8EFDE47B886712AB56AE615C452F9FA3E386FE117C33CC48A03F9B",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/UnityEngine.IMGUIModule.dll",
+    "sha256": "CE58032EAF9836FAFEDC482AF940758C5D3B3A431895F6E1241E1815A88FEB7B",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/UnityEngine.InputLegacyModule.dll",
+    "sha256": "C500D6D7B5516DE3ED40D7577B0ACA71FFF86D8C1BB1AECF5C55FE0EB09C1E8E",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/UnityEngine.UI.dll",
+    "sha256": "EEF8503B3C25C5126B53B4CFB959F5719CD3AC7E0ABDF7FB3576ED11D28DA2D9",
+    "productVersion": null
+  },
+  {
+    "reference": "Il2CppAssemblies/Unity.TextMeshPro.dll",
+    "sha256": "202954FBC4FFD6A9414C93E3557D72DA15618679158C53EA11F9DFD61FBE451C",
+    "productVersion": null
+  }
+]
